@@ -1,0 +1,20 @@
+create database enrollment;
+use enrollment;
+
+create table Student(
+	regno varchar(13) primary key,
+	name varchar(25) not null,
+	major varchar(25) not null,
+	bdate date not null
+);
+
+create table Course(
+	course int primary key,
+	cname varchar(30) not null,
+	dept varchar(100) not null
+);
+
+create table Enroll(
+	regno varchar(13),
+	course int,
+	sem i
